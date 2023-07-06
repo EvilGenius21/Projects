@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+
+    background-image: url("https://assets-global.website-files.com/6009ec8cda7f305645c9d91b/60108d33abf33c3e87e59141_6002086f72b72735a101d204_color-theory.jpeg");
+    background-size:cover;
+    /* background:linear-gradient(0deg,rgba(76, 78, 78, 0.144),rgba(196, 194, 191, 0.111)); */
+    /* background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); */
+}
+
+nav{
+    font-family: 'Roboto Condensed', sans-serif;
+    height:20vh;
+    color: black;
+    width:100%;
+    display:flex;
+    text-decoration: none;
+    justify-content:space-around;
+    align-items: center; 
+    
+}
+/*  to get overlay use background:linear-gradient(2 colors) */
+#logo a{
+    font-size: 1.75em;
+    letter-spacing: 0.1em;   
+    text-decoration: none; 
+    color:black;
+}
+#logo a::after{
+    content:"";
+    height:0%;
+    width:0%;
+    position:absolute;
+    top:0;
+    left:0;
+     border-radius: 20px;
+     background-color: rgba(182, 144, 150, 0.53);
+     z-index: -1;
+     transition: 0.5s;
+
+}
+#logo a:hover:after{
+    height:100%;
+    width:100%;
+}
+#options a{
+    font-style:none;
+    padding: 1em 0.5em;
+    font-size:1.5em;
+    color:black;
+    text-decoration: none; 
+    position:relative;
+    z-index:1;
+}
+/* ::after is used to make a child element of the given element */
+#options a::after{
+    content:"";
+    height:75%;
+    width:0%;
+    position:absolute;
+    top:0;
+    left:0;
+     border-radius: 20px;
+     background-color: rgba(182, 144, 150, 0.53);
+     z-index: -1;
+     transition: 0.5s;
+
+}
+#options a:hover:after{
+    width:100%;
+}
+
+/*  to design anchor tag we use id/ class a */
+#signup a{
+    
+    padding:0.5rem;
+    font-size:1.5em;
+    text-decoration: none; 
+    color:white;
+    background-color:indianred;
+    border-radius: 60%;
+    
+}
+#socials a{
+    font-size: 1.5em;
+    color:black;
+}
+
+
+.info{
+    font-family: 'Roboto Condensed', sans-serif;
+    width:80%;
+    padding:3vh 4vw;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.image img{
+    width:35vw;
+    margin-right:2vw;
+}
+.content h1{
+    font-size:2.5em;
+    color:rgb(146, 47, 47);
+}
+.content p{
+    font-size: 1.25em;
+    line-height: 1.5;
+    color:lightcyan;
+}
+.content a{
+    text-decoration: none;
+    background-color: indianred;
+    color:white;
+    padding:1em;
+    position:relative;
+}
+.content a::before{
+    content:"";
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:0%;
+    border-bottom: 5px solid black;
+     transition: 0.5s;
+
+}
+.content a:hover:before{
+    
+    width:100%;
+
+}
+
+
+.down{
+    font-family: 'Montserrat', sans-serif;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    position:absolute;
+      
+  }
+  
+  .box{
+      display:flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.5em 15em;
+  
+  }
+  .down .box .imaged img{
+      height:5em;
+      width:5em;
+  } 
+  .linkd a{
+      font-size:1.5em;
+      text-decoration: none;
+      color:black;
+  }
